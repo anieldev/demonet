@@ -32,9 +32,9 @@ To qualify as a [cryptographic hash function](https://en.wikipedia.org/wiki/Cryp
 	
 - a hash function is collision resistant if it is highly-improbable that any two inputs share an identical hash
 
-Rapidly evolving hardware must be accounted for especially when the length of passwords remain constant. Therefore, it is desirable for the hash function to take in a parameter which influences the hashing rate so the algorithm can adapt to future faster hardware.
+Rapidly evolving hardware must be accounted for especially when the length of passwords remain constant. Therefore, it is desirable for the hash function to take in parameters which allow adaptation to future faster hardware.
 
-Bcrypt's salted hash meets cryptographic security standards for the web and is an optimal solution. Even better than SHA-256, for storing passwords.
+Bcrypt's salted hash meets [cryptographic security standards for the web](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#bcrypt) and is an optimal solution for storing passwords in a web application. Bcrypt is [better than SHA-256 for storing passwords](https://codahale.com/how-to-safely-store-a-password/).
 
     hash = bcrypt(password, salt, workFactor)
 
