@@ -34,7 +34,14 @@ To qualify as a [cryptographic hash function](https://en.wikipedia.org/wiki/Cryp
 
 Rapidly evolving hardware must be accounted for especially when the length of passwords remain constant. Therefore, it is desirable for the hash function to take in parameters which allow adaptation to future faster hardware.
 
-Bcrypt's salted hash meets [cryptographic security standards for the web](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#bcrypt) and is an optimal solution for storing passwords in a web application. Bcrypt is [better than SHA-256 for storing passwords](https://codahale.com/how-to-safely-store-a-password/).
+[Bcrypt](https://en.wikipedia.org/wiki/Bcrypt) is such a hash function. Bcrypt's salted hash meets current [cryptographic security standards for the web](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#bcrypt) and is an optimal solution to store passwords for a web application. 
+
+#### Side notes and alternative hash functions
+- Why Bcrypt is [better than SHA-256 for storing passwords](https://codahale.com/how-to-safely-store-a-password/).
+- Argon2id won the 2015 Password Hashing Scheme Competition. It is recommended as a better alternative to Bcrypt for newer systems. 
+- [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) is recommended by NIST and has FIPS-140 validated implementations. Bcrypt does a better job at being GPU/ASIC resistant than PBKDF2.
+
+### Bcrypt hash function
 
     hash = bcrypt(password, salt, workFactor)
 
