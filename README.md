@@ -15,7 +15,7 @@ Say the plain text password is `P!zz4p13`. Every time `P!zz4p13` is passed into 
 
 Say another plain text password is `Ch33z7Br3@d!` which happens to be 4 characters longer than `P!zz4p13`. Regardless of the password's length, the length of the hash produced for both passwords will be the same. The exact length depends on the algorithm.
 
-Because hash algorithms always produce the same result for a specific input, they are predictable. This means an attacker can figure out the original password from the hash. In other words, hashing the password is not enough.
+Because hash algorithms always produce the same result for a specific input, they are predictable. This means an attacker could figure out the original password from the hash. In other words, hashing the password is not enough.
 
 
 
@@ -25,9 +25,9 @@ A "*salt*" is a random string. By hashing a plain text password with a generated
 
 
 
-### Choosing a cryptographic hashing algorithm
+### Choosing a cryptographic hash function for storing passwords
 
-To qualify as a cryptographic hash function, a hash function must be "*pre-image resistant*" and "*collision resistant*".
+To qualify as a cryptographic hash function, the hashing algorithm must be "*pre-image resistant*" and "*collision resistant*".
 	
 - a hash function is pre-image resistant if it is computationally infeasible to find any input that hashes to a known output; i.e. given y, it is difficult to find an x such that hash(x) = y
 	
@@ -40,6 +40,6 @@ Bcrypt's salted hash meets cryptographic security standards for the web and is a
     hash = bcrypt(password, salt, workFactor)
 
 where:
-`password` is a strong pasword
-`salt` is a long random unique value
-`workFactor` is the appropriate value that is relative to the hardware and security requirements
+- `password` is a strong pasword
+- `salt` is a long random unique value
+- `workFactor` is the appropriate value that is relative to the hardware and security requirements
