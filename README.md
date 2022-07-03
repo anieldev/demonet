@@ -6,6 +6,15 @@
 
 <a title="User:Jorge Stolfi based on Image:Hash_function.svg by  Helix84, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Cryptographic_Hash_Function.svg"><img width="512" alt="Cryptographic Hash Function" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Cryptographic_Hash_Function.svg/512px-Cryptographic_Hash_Function.svg.png"></a>
 
+```mermaid
+graph LR
+A[Pizza] -- Hash Function --> B[776CB326AB0CD5F0A974]
+E[The cheese pizza was perfectly cheesy ] -- Hash Function --> F[91EBD1DB9B63B26E991D]
+C[The cheese pizza was perfectly cheezy ] -- Hash Function --> D[6BDBB2A6D9FC52835DD2]
+
+
+
+```
 
 ### Hashing a password
 
