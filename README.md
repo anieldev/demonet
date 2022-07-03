@@ -6,9 +6,9 @@
 
 ```mermaid
 graph LR
-A[Pizza] -- Hash Function --> B[776CB326AB0CD5F0A974...]
-E[The cheese pizza was perfectly cheesy ] -- Hash Function --> F[91EBD1DB9B63B26E991D...]
-C[The cheese pizza was perfectly cheezy ] -- Hash Function --> D[6BDBB2A6D9FC52835DD2...]
+A[Pizza] -- Hash Function --> B[776CB326AB0CD5F0A974]
+E[The cheese pizza was perfectly cheesy ] -- Hash Function --> F[91EBD1DB9B63B26E991D]
+C[The cheese pizza was perfectly cheezy ] -- Hash Function --> D[6BDBB2A6D9FC52835DD2]
 ```
 <br>
 
