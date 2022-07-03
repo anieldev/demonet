@@ -4,7 +4,7 @@
 
 ## Authentication
 
-
+![hash function](https://upload.wikimedia.org/wikipedia/commons/2/2b/Cryptographic_Hash_Function.svg)
 
 ### Hashing a password
 
