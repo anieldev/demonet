@@ -8,7 +8,7 @@
 
 ### Hashing a password
 
-"*Hashing*" a password refers to taking a plain text password and putting it through a [hash function](https://en.wikipedia.org/wiki/Hash_function). The hashing algorithm takes in a string of any size and outputs a fixed-length string. No matter the size of the original string (i.e., the plain text password), the output (the hash) is always the same length. Since the same process is always applied, the same input always yields the same output.
+"*Hashing*" a password refers to taking a plain text password and using it as the input for a [hash function](https://en.wikipedia.org/wiki/Hash_function), which outputs a fixed-length string (also called the "hash value", "hash", or "digest"). No matter the size of the original string (i.e., the plain text password), the output (the hash) is always the same length. Since the same process is always applied, the same input always yields the same output.
 
 Say the plain text password is `P!zz4p13`. Every time `P!zz4p13` is passed into the hash function, the returned hash is the same.
 
