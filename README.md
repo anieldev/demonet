@@ -40,7 +40,7 @@ Rapidly evolving hardware must be accounted for especially when the length of pa
 - Why bcrypt is [better than SHA256 for hashing passwords](https://codahale.com/how-to-safely-store-a-password/).
 - [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) is the default recommendation by NIST and has validated FIPS-140 compliance. However, bcrypt is generally preferred as it holds up better with GPU/ASIC attacks than PBKDF2 with similar inputs.
 - [Scrypt](https://www.tarsnap.com/scrypt.html) is designed to be more secure against hardware brute-force attacks than alternative functions such as PBKDF2 or bcrypt.
-- [Argon2](https://en.wikipedia.org/wiki/Argon2) won the 2015 [Password Hashing Competition](https://www.password-hashing.net/)(PHC). Argon2id, one of the three Argon2 variants, is generally recommended as a better alternative to bcrypt for newer systems. 
+- [Argon2](https://en.wikipedia.org/wiki/Argon2) won the 2015 [Password Hashing Competition](https://www.password-hashing.net/) (PHC). Argon2id, one of the three Argon2 variants, is generally recommended as a better alternative to bcrypt for newer systems. 
 - [Yescrypt](https://www.openwall.com/yescrypt/) builds on scrypt and is an alternative to Argon2. Although yescrypt is not the 2015 PHC winner (Argon2 won), yescrypt was a finalist with "special recognition".
 
 Choosing any of these algorithms to hash passwords is optimal in the general case. PBKDF2, bcrypt and scrypt are currently the most widely-used Password Hashing Schemes (PHS) and Key Derivation Functions (KDF) for mainstream applications. Argon2 is the latest and greatest as of right now. We'll go with the battle-tested bcrypt and refrain from doing anything fancy for storing passwords.
