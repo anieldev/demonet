@@ -38,8 +38,8 @@ Rapidly evolving hardware must be accounted for especially when the length of pa
 
 #### Side notes and alternative hash functions
 - Why Bcrypt is [better than SHA-256 for storing passwords](https://codahale.com/how-to-safely-store-a-password/).
-- Argon2 won the 2015 [Password Hashing Competition](https://www.password-hashing.net/). It is recommended as a better alternative to Bcrypt for newer systems. 
-- [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) is recommended by NIST and has FIPS-140 validated implementations. Bcrypt does a better job at being GPU/ASIC resistant than PBKDF2.
+- Argon2 won the 2015 [Password Hashing Competition](https://www.password-hashing.net/). Argon2id is recommended as a better alternative to Bcrypt for newer systems. 
+- [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) received approval by NIST and has validated FIPS-140 compliance. However, Bcrypt is generally preferred as it holds up better with GPU/ASIC attacks than PBKDF2 with similar inputs.
 
 ### Bcrypt hash function
 
