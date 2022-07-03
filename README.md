@@ -4,7 +4,7 @@
 
 ## Authentication
 
-<a title="Davidgothberg, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Hash_function.svg"><img width="512" alt="Hash function" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hash_function.svg/512px-Hash_function.svg.png"></a>
+<a title="User:Jorge Stolfi based on Image:Hash_function.svg by  Helix84, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Cryptographic_Hash_Function.svg"><img width="512" alt="Cryptographic Hash Function" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Cryptographic_Hash_Function.svg/512px-Cryptographic_Hash_Function.svg.png"></a>
 
 
 ### Hashing a password
