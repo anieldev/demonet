@@ -1,7 +1,6 @@
 # demonet
 
-
-
+<br>
 
 ## Authentication
 
@@ -17,13 +16,13 @@ Say another plain text password is `Ch33z7Br3@d!` which happens to be 4 characte
 
 Because hash algorithms always produce the same result for a specific input, they are predictable. This means an attacker could figure out the original password from the hash. In other words, hashing the password is not enough.
 
-
+<br>
 
 ### Salting a password
 
 A "*salt*" is a random string. By hashing a plain text password with a generated salt, the hash algorithm’s output is no longer predictable. The same password, once hashed, will no longer yield the same hash again without using the same salt. Salts also help mitigate hash table attacks by forcing attackers to re-compute them using the salts for each user.
 
-
+<br>
 
 ### Choosing a cryptographic hash function for storing passwords
 
