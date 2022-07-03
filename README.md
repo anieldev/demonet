@@ -37,9 +37,11 @@ Rapidly evolving hardware must be accounted for especially when the length of pa
 [Bcrypt](https://en.wikipedia.org/wiki/Bcrypt) is such a hash function. Bcrypt's salted hash meets current [cryptographic security standards for the web](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#bcrypt) and is an optimal solution for storing passwords in a web application. 
 
 #### Side notes and alternative hash functions
-- Why Bcrypt is [better than SHA256 for hashing passwords](https://codahale.com/how-to-safely-store-a-password/).
-- Argon2 won the 2015 [Password Hashing Competition](https://www.password-hashing.net/). Argon2id is recommended as a better alternative to Bcrypt for newer systems. 
-- [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) is the default recommendation by NIST and has validated FIPS-140 compliance. However, Bcrypt is generally preferred as it holds up better with GPU/ASIC attacks than PBKDF2 with similar inputs.
+- Why bcrypt is [better than SHA256 for hashing passwords](https://codahale.com/how-to-safely-store-a-password/).
+- [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) is the default recommendation by NIST and has validated FIPS-140 compliance. However, bcrypt is generally preferred as it holds up better with GPU/ASIC attacks than PBKDF2 with similar inputs.
+- [Scrypt](https://www.tarsnap.com/scrypt.html) is designed to be more secure against hardware brute-force attacks than alternative functions such as PBKDF2 or bcrypt.
+- Argon2 won the 2015 [Password Hashing Competition](https://www.password-hashing.net/)(PHC). Argon2id, one of the three Argon2 variants, is generally recommended as a better alternative to bcrypt for newer systems. 
+- [Yescrypt](https://www.openwall.com/yescrypt/) builds on scrypt and is an alternative to Argon2. Argon2 was the 2015 PHC winner but yescrypt was a finalist with "special recognition".
 
 <br>
 
