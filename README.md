@@ -37,7 +37,7 @@ Rapidly evolving hardware must be accounted for especially when the length of pa
 [Bcrypt](https://en.wikipedia.org/wiki/Bcrypt) is such a hash function. Bcrypt's salted hash meets current [cryptographic security standards for the web](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#bcrypt) and is an optimal solution to store passwords for a web application. 
 
 #### Side notes and alternative hash functions
-- Why Bcrypt is [better than SHA-256 for storing passwords](https://codahale.com/how-to-safely-store-a-password/).
+- Why Bcrypt is [better than SHA256 for hashing passwords](https://codahale.com/how-to-safely-store-a-password/).
 - Argon2 won the 2015 [Password Hashing Competition](https://www.password-hashing.net/). Argon2id is recommended as a better alternative to Bcrypt for newer systems. 
 - [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) received approval by NIST and has validated FIPS-140 compliance. However, Bcrypt is generally preferred as it holds up better with GPU/ASIC attacks than PBKDF2 with similar inputs.
 
