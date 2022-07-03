@@ -2,7 +2,7 @@
 
 <br>
 
-## Authentication
+## Hash functions for password storage and user authentication
 
 ```mermaid
 graph LR
