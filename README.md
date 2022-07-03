@@ -28,7 +28,7 @@ A "*salt*" is a random string. By hashing a plain text password with a generated
 
 To qualify as a [cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function), the hashing algorithm must be "*pre-image resistant*" and "*collision resistant*".
 	
-- a hash function is pre-image resistant if it is computationally infeasible to find any input that hashes to a known output; i.e. given y, it is difficult to find an x such that hash(x) = y
+- a hash function is pre-image resistant if it is computationally infeasible to find any input that hashes to a known output; i.e. given `y`, it is difficult to find an `x` such that `hash(x) = y`
 	
 - a hash function is collision resistant if it is highly-improbable that any two inputs share an identical hash
 
