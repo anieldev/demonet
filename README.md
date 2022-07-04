@@ -51,7 +51,7 @@ Rapidly evolving hardware must be accounted for especially when the length of pa
 - [Argon2](https://en.wikipedia.org/wiki/Argon2) won the 2015 [Password Hashing Competition](https://www.password-hashing.net/) (PHC). Argon2id, one of the three Argon2 variants, is generally recommended as a better alternative to PBKDF2 or bcrypt for newer systems. 
 - [Yescrypt](https://www.openwall.com/yescrypt/) is an improvement from scrypt and serves as an alternative to Argon2. Although yescrypt is not the 2015 PHC winner (Argon2 is), yescrypt was a finalist with "special recognition".
 
-Choosing any of these algorithms to hash passwords is optimal in the general case. [According to this 2015 research paper](https://eprint.iacr.org/2015/265.pdf) PBKDF2, bcrypt and scrypt are the most widely-used Password Hashing Schemes (PHS) and Key Derivation Functions (KDF) for mainstream applications. Argon2 is currently state-of-the-art.
+Choosing any of these algorithms to hash passwords is optimal in the general case. PBKDF2, bcrypt and scrypt are the most widely-used Password Hashing Schemes (PHS) and Key Derivation Functions (KDF) for mainstream applications ([according to this 2015 research paper](https://eprint.iacr.org/2015/265.pdf)). Argon2 is currently state-of-the-art.
 
 We'll go with the battle-tested bcrypt and refrain from doing anything fancy for storing passwords. We could do better, but we won't.
 
