@@ -52,7 +52,7 @@ pass[P!zz4p13] -- append Salt --> salt[P!zz4p13B98C0D69] -- calculate Hash --> h
 
 ```
 
-A "*salt*" is a random string. By hashing a plain text password with a generated salt, the hash algorithm is no longer predictable. The same password, once hashed, will no longer yield the same hash again without using the same salt. Salts also help mitigate [hash table](https://en.wikipedia.org/wiki/Hash_table) attacks by forcing attackers to re-compute them using the salts for each user.
+A "*salt*" is a random string. By hashing a plain text password with a generated salt, the hash algorithm is less predictable. The same password, once hashed, will no longer yield the same hash again without using the same salt. Salts also help mitigate [hash table](https://en.wikipedia.org/wiki/Hash_table) attacks by forcing attackers to re-compute them using the salts for each user.
 
 <br>
 
@@ -70,7 +70,7 @@ Rapidly evolving hardware must be accounted for especially when the length of pa
 
 #### Side notes and alternative hash functions
 - Why bcrypt is [better than SHA256 for hashing passwords](https://codahale.com/how-to-safely-store-a-password/).
-- Okta-owned [Auth0 covering their utilization of bcrypt](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/). 
+- Okta-owned [Auth0 utilizes bcrypt](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/). 
 - [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) is the default recommendation by NIST and is used when FIPS-140 compliance is a constraint. However, bcrypt is preferred over PBKDF2 whenever possible as it holds up better with newer GPU/ASIC attacks under similar conditions.
 - [Scrypt](https://www.tarsnap.com/scrypt.html) is designed to be more secure against hardware brute-force attacks than alternative functions such as PBKDF2 or bcrypt.
 - [Argon2](https://en.wikipedia.org/wiki/Argon2) won the 2015 [Password Hashing Competition](https://www.password-hashing.net/) (PHC). Argon2id, one of the three Argon2 variants, is generally recommended as a better alternative to PBKDF2 or bcrypt for newer systems. 
