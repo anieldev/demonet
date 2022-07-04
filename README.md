@@ -52,7 +52,7 @@ pass[P!zz4p13] -- append Salt --> salt[P!zz4p13B98C0D6945C419243286] -- calculat
 
 ```
 
-A "*salt*" is a random string. By hashing a plain text password with an appended (or prepended) salt, the hashes are randomized and less predictable. The same password, once salted and hashed, will not yield the same hash again unless the same salt is used. The main goal of salts is to gaurantee unique hashes for users with identical passwords. Salts also help mitigate [hash table](https://en.wikipedia.org/wiki/Hash_table) attacks by forcing attackers to re-compute them using the salts for each user.
+A "*salt*" is a random string. By hashing a plain text password with an appended (or prepended) salt, the hashes are randomized and less predictable. The same password will not yield the same hash again unless the same salt is used. The main goal of salts is to gaurantee unique hashes for every user; even users with identical passwords. Salts also help mitigate [hash table](https://en.wikipedia.org/wiki/Hash_table) attacks by forcing attackers to re-compute them using the salts for each user.
 
 <br>
 
