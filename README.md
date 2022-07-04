@@ -4,6 +4,10 @@
 
 ## Authenticating users and hashing their passwords
 
+<br>
+
+### Hashing a password
+
 ```mermaid
 graph LR
 A[Pizza] -- Hash Function --> B[776CB326AB0CD5F0A974]
@@ -25,9 +29,6 @@ style F fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
 -->
 
 
-<br>
-
-### Hashing a password
 
 "*Hashing*" a password refers to using a plain text password as the input for a [hash function](https://en.wikipedia.org/wiki/Hash_function), which outputs a fixed-length string known as the "hash", "hash value" or more formally the "digest". No matter the size of the original string (i.e., the plain text password), the output (the hash) is always the same length. Since the same process is always applied, the same input always yields the same output.
 
@@ -42,6 +43,15 @@ Because hash functions always produce the same result for a specific input, they
 <br>
 
 ### Salting a password
+
+```mermaid
+graph LR
+
+pass[P!zz4p13] -- Append Salt --> salt[P!zz4p13B98C0D69] -- Hash Function --> hash[CD7C155A42BF1BA18B2F]
+
+
+
+```
 
 A "*salt*" is a random string. By hashing a plain text password with a generated salt, the hash algorithm is no longer predictable. The same password, once hashed, will no longer yield the same hash again without using the same salt. Salts also help mitigate [hash table](https://en.wikipedia.org/wiki/Hash_table) attacks by forcing attackers to re-compute them using the salts for each user.
 
