@@ -11,14 +11,19 @@ E[The cheese pizza was perfectly cheeSy ] -- Hash Function --> F[91EBD1DB9B63B26
 C[The cheese pizza was perfectly cheeZy ] -- Hash Function --> D[6BDBB2A6D9FC52835DD2]
 
 
+```
+
+<!---
+// mermaid styles incase they are ever needed
 style A fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
 style B fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
 style C fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
 style D fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
 style E fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
 style F fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
+-->
 
-```
+
 <br>
 
 ### Hashing a password
