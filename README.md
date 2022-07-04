@@ -1,4 +1,4 @@
-# Authentication model
+# Authentication
 
 <br>
 
