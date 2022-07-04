@@ -10,6 +10,7 @@ import { useLoaderData } from "@remix-run/react";
 
 type LoaderData = { name: String };
 
+
 export const loader: LoaderFunction = async () => {
   const data: LoaderData = {
     name: "John Doe"
@@ -18,7 +19,6 @@ export const loader: LoaderFunction = async () => {
   // All loaders must return a `Response` object.
   return json(data);
 };
-
 
 
 export default function SomeRouteComponent() {
