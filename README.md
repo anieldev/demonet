@@ -3,7 +3,7 @@
 <br>
 
 ## Authenticating users and hashing their passwords
-9ED1515819DEC61FD361D5FD
+
 ```mermaid
 graph LR
 A[Pizza] -- Hash Function --> B[776CB326AB0CD5F0A974]
