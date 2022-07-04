@@ -3,12 +3,13 @@
 <br>
 
 ## Authenticating users and hashing their passwords
-
+9ED1515819DEC61FD361D5FD
 ```mermaid
 graph LR
 A[Pizza] -- Hash Function --> B[776CB326AB0CD5F0A974]
+C[pizza] -- Hash Function --> D[9ED1515819DEC61FD361]
 E[The cheese pizza was perfectly cheeSy ] -- Hash Function --> F[91EBD1DB9B63B26E991D]
-C[The cheese pizza was perfectly cheeZy ] -- Hash Function --> D[6BDBB2A6D9FC52835DD2]
+G[The cheese pizza was perfectly cheeZy ] -- Hash Function --> H[6BDBB2A6D9FC52835DD2]
 
 
 ```
