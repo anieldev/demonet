@@ -2,7 +2,7 @@
 
 <br>
 
-## Overview of hash functions
+## Brief summary of hash functions
 
 
 ```mermaid
