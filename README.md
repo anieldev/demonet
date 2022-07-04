@@ -1,12 +1,9 @@
-# demonet
+# Authentication model
 
 <br>
 
-## Authenticating users and hashing their passwords
+## Hash functions
 
-<br>
-
-### Hashing a password
 
 ```mermaid
 graph LR
@@ -28,7 +25,9 @@ style E fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
 style F fill:#1f2020,stroke:#81B1DB,stroke-width:1px,color:#FFFFFF
 -->
 
+<br>
 
+### Hashing a password
 
 "*Hashing*" a password refers to using a plain text password as the input for a [hash function](https://en.wikipedia.org/wiki/Hash_function), which outputs a fixed-length string known as the "hash", "hash value" or more formally the "digest". No matter the size of the original string (i.e., the plain text password), the output (the hash) is always the same length. Since the same process is always applied, the same input always yields the same output.
 
