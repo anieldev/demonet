@@ -6,7 +6,7 @@
 
 <br>
 
-### Simple route
+### Some route with data
 
 ```tsx
 
