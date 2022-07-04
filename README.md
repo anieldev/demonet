@@ -16,9 +16,11 @@ C[The cheese pizza was perfectly cheeZy ] -- Hash Function --> D[6BDBB2A6D9FC528
 
 "*Hashing*" a password refers to using a plain text password as the input for a [hash function](https://en.wikipedia.org/wiki/Hash_function), which outputs a fixed-length string known as the "hash", "hash value" or more formally the "digest". No matter the size of the original string (i.e., the plain text password), the output (the hash) is always the same length. Since the same process is always applied, the same input always yields the same output.
 
-Say the plain text password is `P!zz4p13`. Every time `P!zz4p13` is passed into the hash function, the returned hash is the same.
+For example:
 
-Say another plain text password is `Ch33z7Br3@d!` which happens to be 4 characters longer than `P!zz4p13`. Regardless of the password's length, the length of the hash produced for both passwords will be the same. The exact length depends on the algorithm.
+- Say the plain text password is `P!zz4p13`. Every time `P!zz4p13` is passed into the hash function, the returned hash is the same.
+
+- Say another plain text password is `Ch33z7Br3@d!` which happens to be 4 characters longer than `P!zz4p13`. Regardless of the password's length, the length of the hash produced for both passwords will be the same. The exact length depends on the algorithm.
 
 Because hash functions always produce the same result for a specific input, they are predictable. This means an attacker could figure out the original password from the hash. In other words, hashing the password is not enough.
 
