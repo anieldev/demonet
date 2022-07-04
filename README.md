@@ -37,7 +37,7 @@ For example:
 
 - Say another plain text password is `Ch33z7Br3@d!` which happens to be 4 characters longer than `P!zz4p13`. Regardless of the password's length, the length of the hash produced for both passwords will be the same. The exact length depends on the algorithm.
 
-Because hash functions always produce the same result for a specific input, they are predictable. This means an attacker could figure out the original password from the hash. In other words, hashing the password is not enough.
+Because hash functions always produce the same result for a specific input, two or more users can have identical hashes if they use the same password. An attacker could also pre-compute a bunch of hashes for common passwords. In other words, hashing the password is not enough.
 
 <br>
 
@@ -52,7 +52,7 @@ pass[P!zz4p13] -- append Salt --> salt[P!zz4p13B98C0D6945C419243286] -- calculat
 
 ```
 
-A "*salt*" is a random string. By hashing a plain text password with a generated salt, the hash algorithm is less predictable. The same password, once hashed, will no longer yield the same hash again without using the same salt. Salts also help mitigate [hash table](https://en.wikipedia.org/wiki/Hash_table) attacks by forcing attackers to re-compute them using the salts for each user.
+A "*salt*" is a random string. By hashing a plain text password with an appended (or prepended) salt, the hashes are randomized and less predictable. The same password, once salted and hashed, will not yield the same hash again unless the same salt is used. The main goal of salts is to gaurantee unique hashes for users with identical passwords. Salts also help mitigate [hash table](https://en.wikipedia.org/wiki/Hash_table) attacks by forcing attackers to re-compute them using the salts for each user.
 
 <br>
 
