@@ -10,7 +10,7 @@
 
 ```tsx
 
-// Typescript (TSX)
+// someRoute.tsx
 
 import { json } from "@remix-run/node";
 import type { LoaderFunction } from "@remix-run/node";
@@ -30,7 +30,7 @@ export const loader: LoaderFunction = async () => {
 };
 
 
-export default function RouteComponent() {
+export default function SomeRouteComponent() {
   const data = useLoaderData<LoaderData>();
   return (
     <div>
