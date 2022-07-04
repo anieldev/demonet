@@ -2,7 +2,7 @@
 
 <br>
 
-## The purpose of hash functions
+## Authenticating users and hashing their passwords
 
 ```mermaid
 graph LR
