@@ -20,7 +20,7 @@ import { useLoaderData } from "@remix-run/react";
 type LoaderData = { name: String };
 
 
-export const loader: LoaderFunction = async ({ request, params }) => {
+export const loader: LoaderFunction = async () => {
   const data: LoaderData = {
     name: "Jane Doe"
   };
