@@ -30,7 +30,7 @@ export const loader: LoaderFunction = async () => {
 };
 
 
-export default function SomeRouteComponent() {
+export default function RouteComponent() {
   const data = useLoaderData<LoaderData>();
   return (
     <div>
