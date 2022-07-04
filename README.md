@@ -9,6 +9,15 @@ graph LR
 A[Pizza] -- Hash Function --> B[776CB326AB0CD5F0A974]
 E[The cheese pizza was perfectly cheeSy ] -- Hash Function --> F[91EBD1DB9B63B26E991D]
 C[The cheese pizza was perfectly cheeZy ] -- Hash Function --> D[6BDBB2A6D9FC52835DD2]
+
+
+style A fill: #1f2020;stroke: #81B1DB;stroke-width: 1px;
+style B fill: #1f2020;stroke: #81B1DB;stroke-width: 1px;
+style C fill: #1f2020;stroke: #81B1DB;stroke-width: 1px;
+style D fill: #1f2020;stroke: #81B1DB;stroke-width: 1px;
+style E fill: #1f2020;stroke: #81B1DB;stroke-width: 1px;
+style F fill: #1f2020;stroke: #81B1DB;stroke-width: 1px;
+
 ```
 <br>
 
