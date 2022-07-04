@@ -1,4 +1,13 @@
-# Route template
+# Remix
+
+<br>
+
+## Route templates
+
+<br>
+
+### Simple route
+
 ```tsx
 
 // Typescript (TSX)
@@ -13,7 +22,7 @@ type LoaderData = { name: String };
 
 export const loader: LoaderFunction = async () => {
   const data: LoaderData = {
-    name: "John Doe"
+    name: "Jane Doe"
   };
   // The `json` function converts a serializable object into a JSON response
   // All loaders must return a `Response` object.
