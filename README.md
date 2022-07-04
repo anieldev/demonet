@@ -46,7 +46,7 @@ Because hash functions always produce the same result for a specific input, they
 ```mermaid
 graph LR
 
-pass[P!zz4p13] -- Append Salt --> salt[P!zz4p13B98C0D69] -- Hash Function --> hash[CD7C155A42BF1BA18B2F]
+pass[P!zz4p13] -- append Salt --> salt[P!zz4p13B98C0D69] -- calculate Hash --> hash[CD7C155A42BF1BA18B2F]
 
 
 
