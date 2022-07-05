@@ -6,7 +6,7 @@
 
 <br>
 
-### Some route with data
+### Some route with static json data
 
 ```tsx
 
